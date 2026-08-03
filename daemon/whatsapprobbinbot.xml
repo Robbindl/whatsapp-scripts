@@ -1,0 +1,35 @@
+<service>
+	<id>whatsapprobbinbot.exe</id>
+	<name>WhatsAppRobbinBot</name>
+	<description>Runs the WhatsApp Robbin bot in the background</description>
+	<executable>C:\Program Files\nodejs\node.exe</executable>
+	<argument>--harmony</argument>
+	<argument>--max_old_space_size=4096</argument>
+	<argument>C:\Users\NewRobbie\Downloads\whatsapp_scripts\node_modules\node-windows\lib\wrapper.js</argument>
+	<argument>--file</argument>
+	<argument>C:\Users\NewRobbie\Downloads\whatsapp_scripts\robbin_bot.js</argument>
+	<argument>--scriptoptions=</argument>
+	<argument>--log</argument>
+	<argument>WhatsAppRobbinBot wrapper</argument>
+	<argument>--grow</argument>
+	<argument>0.25</argument>
+	<argument>--wait</argument>
+	<argument>1</argument>
+	<argument>--maxrestarts</argument>
+	<argument>3</argument>
+	<argument>--abortonerror</argument>
+	<argument>n</argument>
+	<argument>--stopparentfirst</argument>
+	<argument>true</argument>
+	<logmode>rotate</logmode>
+	<stopparentprocessfirst>true</stopparentprocessfirst>
+	<stoptimeout>30sec</stoptimeout>
+	<env name="NODE_ENV" value="production"/>
+	<env name="NVIDIA_API_KEY" value="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"/>
+	<serviceaccount>
+		<domain>ROBBINDL</domain>
+		<user>LocalSystem</user>
+		<password></password>
+	</serviceaccount>
+	<workingdirectory>C:\Users\NewRobbie\Downloads\whatsapp_scripts</workingdirectory>
+</service>

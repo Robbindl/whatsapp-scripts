@@ -1,0 +1,9 @@
+node_modules/
+.session/
+session/
+*.log
+*.out
+*.err
+qr-code.txt
+npm-debug.log*
+.DS_Store
